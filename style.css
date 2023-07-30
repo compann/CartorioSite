@@ -1,0 +1,231 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Primeiro background para a seção principal */
+section.main {
+    background-image: url('images/bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+    position: relative;
+}
+
+.Contatos a {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1b0909;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    text-decoration: underline;
+}
+
+.whatsapp {
+    text-align: center;
+    margin-top: 50px; /* Espaçamento acima do texto para separar da logoCart */
+    margin-bottom: 50px; /* Espaçamento abaixo do texto para separar das caixas */
+}
+
+.whatsapp h1 {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-bottom: 10px; /* Espaçamento entre os títulos */
+}
+
+.whatsapp h1 {
+    font-size: 30px; /* Ajuste o tamanho do título conforme necessário */
+}
+
+h1.titulo {
+    color:#f1f1f1;
+    text-align: center;
+    font-size: 40px;
+}
+
+.center {
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu {
+    width: 50%;
+    color: antiquewhite;
+}
+
+
+.cartlogo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    height: auto;
+    margin-left: 39%;
+
+}
+
+/* Segundo background para o fundo do site inteiro, exceto a seção principal */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/pred.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Estilos para as caixas */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.box-container a {
+    text-decoration: none; /* Remover a sublinhado padrão dos links */
+}
+
+.box-container a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Efeito de cor de fundo ao passar o mouse sobre o link */
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    width: 400px;
+    height: 200px;
+    background-color: #255aff; /* Cor de fundo azul para as caixas */
+    border: 4px solid #351b1b7e; /* Borda branca de 2px */
+    margin: 25px; /* Espaçamento externo para dar espaço entre as caixas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    position: relative;
+}
+
+.box1 h1,
+.box2 h1,
+.box3 h1,
+.box4 h1 {
+    color: #f1f1f1;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.zap {
+    font-size: 24px; /* Tamanho do ícone */
+    color: #fff; /* Cor do ícone */
+    position: absolute; /* Definir a posição como absolute */
+    top: 10px; /* Ajustar a posição vertical (aumente ou diminua conforme necessário) */
+    left: 10px; /* Ajustar a posição horizontal (aumente ou diminua conforme necessário) */
+}
+
+/* Estilo da div de informações */
+.informacoes {
+    width: 80%; /* Largura da div */
+    max-width: 900px; /* Largura máxima da div para que ela não fique muito larga em telas maiores */
+    margin: 0 auto; /* Centralizar horizontalmente usando margens automáticas */
+    padding: 20px; /* Espaçamento interno para afastar o conteúdo das bordas */
+    background-color: #255aff; /* Background cinza */
+    text-align: center; /* Centralizar o texto dentro da div */
+    border-radius: 2%;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #f1f1f1;
+}
+
+.informacoes h3 {
+    color: rgb(180, 63, 63);
+    font-size: 50px;
+}
+
+/* Estilo da div centralizada */
+.centered-div {
+    width: 80%; /* Largura da div */
+    max-width: 600px; /* Largura máxima da div para que ela não fique muito larga em telas maiores */
+    margin: 0 auto; /* Centralizar horizontalmente usando margens automáticas */
+    padding: 20px; /* Espaçamento interno para afastar o conteúdo das bordas */
+    background-color: #f2f2f2; /* Background cinza */
+    text-align: center; /* Centralizar o texto dentro da div */
+}
+
+/* Estilo da lista de serviços */
+.service-list {
+    list-style: none; /* Remover os marcadores padrão da lista */
+    padding: 0; /* Remover o espaçamento interno padrão da lista */
+    text-align: left; /* Alinhar a lista à esquerda */
+    color: #f1f1f1; /* Cor do texto na lista */
+}
+
+/* Estilo dos itens da lista */
+.service-list li {
+    margin: 10px 0; /* Espaçamento entre os itens da lista */
+    padding-left: 20px; /* Adicionar um espaçamento à esquerda para o símbolo */
+}
+
+/* Alterar o símbolo da lista para um traço */
+.service-list li:before {
+    content: "-"; /* Substituir o marcador padrão por um traço */
+    padding-right: 10px; /* Adicionar espaço entre o traço e o texto */
+}
+
+  
+.pdf {
+    width: 80%; /* Largura da div */
+    max-width: 900px; /* Largura máxima da div para que ela não fique muito larga em telas maiores */
+    margin: 0 auto; /* Centralizar horizontalmente usando margens automáticas */
+    padding: 20px; /* Espaçamento interno para afastar o conteúdo das bordas */
+    background-color: #255aff; /* Background cinza */
+    text-align: center; /* Centralizar o texto dentro da div */
+    border-radius: 2%;
+    margin-bottom: 50px;
+}
+
+.pdf h1 {
+    color: red;
+}
+
+.pdf h2{
+    color:#f1f1f1
+}
+
+.pdf a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+
+    }
+
+.pdf-icon {
+    font-size: 40px;
+}
+
+
